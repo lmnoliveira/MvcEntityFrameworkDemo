@@ -76,3 +76,7 @@ C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFramew
 C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.csproj.CopyComplete
 C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.dll
 C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.pdb
+C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\EntityFramework.dll
+C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\EntityFramework.SqlServer.dll
+C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\EntityFramework.xml
+C:\Users\LOLIVEIRA\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\EntityFramework.SqlServer.xml
