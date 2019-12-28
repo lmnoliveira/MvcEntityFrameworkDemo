@@ -4,23 +4,34 @@ using System.Data.Entity;
 using System.Linq;
 using System.Data.SqlClient;
 using System.Reflection;
+using EntityFrameworkDemo01.Repositories.Interfaces;
 
 namespace EntityFrameworkDemo01.Repositories
 {
-    public class CondominiumRepository : Repository<CondominiumModel>
+    public class CondominiumRepository : RepositoryBase<Condominium>, ICondominiumRepository
     {
-        public IEnumerable<CondominiumModel> Read(IEnumerable<int> ids)
+        public System.Data.Entity.DbSet<Condominium> CondominiumModels { get; set; }
+
+        public CondominiumRepository() : base()
         {
-            return Set<CondominiumModel>().Where(c => ids.Contains(c.Id)).ToList();
         }
 
-        public IEnumerable<CondominiumModel> Read(long subsidiaryId,
+        public CondominiumRepository(string nameOrConnectionString) : base(nameOrConnectionString)
+        {
+        }
+
+        public IEnumerable<Condominium> Read(IEnumerable<int> ids)
+        {
+            return Set<Condominium>().Where(c => ids.Contains(c.Id)).ToList();
+        }
+
+        public IEnumerable<Condominium> Read(long subsidiaryId,
                                                   string code_name = null,
                                                   short pageNumber = 0,
                                                   short rowsPerPage = 0,
                                                   IEnumerable<KeyValuePair<string, SortOrder>> orderBy = null)
         {
-            DbSet<CondominiumModel> query = Set<CondominiumModel>();
+            DbSet<Condominium> query = Set<Condominium>();
             query.Where(c => c.SubsidiaryId == subsidiaryId);
             if (!string.IsNullOrWhiteSpace(code_name)) query.Where(c => c.Code.Contains(code_name) || c.Name.Contains(code_name));
             query.Skip(pageNumber).Take(rowsPerPage);
@@ -29,7 +40,7 @@ namespace EntityFrameworkDemo01.Repositories
                 PropertyInfo p;
                 foreach (var o in orderBy)
                 {
-                    p = typeof(CondominiumModel).GetProperty(o.Key);
+                    p = typeof(Condominium).GetProperty(o.Key);
                     if (o.Value == SortOrder.Ascending) query.OrderBy(c => p.GetValue(c));
                     else query.OrderByDescending(c => p.GetValue(c));
                 }
@@ -37,9 +48,9 @@ namespace EntityFrameworkDemo01.Repositories
             return query.ToList();
         }
 
-        public IEnumerable<CondominiumModel> Delete(IEnumerable<int> ids)
+        public IEnumerable<Condominium> Delete(IEnumerable<int> ids)
         {
-            return  Set<CondominiumModel>().RemoveRange(Read(ids));
+            return Set<Condominium>().RemoveRange(Read(ids));
         }
     }
 }

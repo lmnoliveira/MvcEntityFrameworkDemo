@@ -10,7 +10,7 @@ namespace EntityFrameworkDemo01Tests
         [TestMethod]
         public void TestMethod01()
         {
-            var memberName = Common.Helpers.Reflection.ObjectMembers.GetMemberName((CondominiumModel cm) => cm.Id);
+            var memberName = Common.Helpers.Reflection.ObjectMembers.GetMemberName((Condominium cm) => cm.Id);
             Assert.AreEqual("Id", memberName);
         }
     }

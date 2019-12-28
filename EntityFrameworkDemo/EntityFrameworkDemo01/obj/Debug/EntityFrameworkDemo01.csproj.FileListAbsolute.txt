@@ -162,5 +162,3 @@ C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkD
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.csproj.CopyComplete
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.dll
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.pdb
-C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Common.dll
-C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Common.pdb

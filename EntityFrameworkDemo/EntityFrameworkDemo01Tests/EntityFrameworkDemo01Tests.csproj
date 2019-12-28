@@ -57,7 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
-      <Project>{81b0a2d9-456d-4c00-b68e-c6d9c5297775}</Project>
+      <Project>{d2f37526-1b9b-44de-b255-436cf7479eee}</Project>
       <Name>Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntityFrameworkDemo01\EntityFrameworkDemo01.csproj">
