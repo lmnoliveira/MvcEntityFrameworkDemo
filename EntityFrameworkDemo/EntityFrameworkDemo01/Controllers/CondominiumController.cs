@@ -9,17 +9,21 @@ using System.Web.Mvc;
 using EntityFrameworkDemo01.Models;
 using EntityFrameworkDemo01.Repositories;
 using EntityFrameworkDemo01.Repositories.Interfaces;
+using System.Data.SqlClient;
 
 namespace EntityFrameworkDemo01.Controllers
 {
     public class CondominiumController : Controller
     {
-        private ICondominiumRepository db = new CondominiumRepository();
+        private readonly ICondominiumRepository db = new CondominiumRepository();
 
         // GET: Condominiums
         public ActionResult Index()
         {
-            return View(db.Read(123456, pageNumber:0, rowsPerPage:10));
+            return View(db.Read(123456, 
+                                pageNumber:0, 
+                                rowsPerPage:10,
+                                orderBy:new KeyValuePair<string, SortOrder>[] { new KeyValuePair<string, SortOrder>(Common.Helpers.Reflection.ObjectMembers.GetMemberName((Condominium cm) => cm.Id), SortOrder.Ascending) }));
         }
 
         // GET: Condominiums/Details/5
@@ -29,7 +33,7 @@ namespace EntityFrameworkDemo01.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Condominium condominium = db.Read(new int[] { id.Value }).First();
+            Condominium condominium = db.Read(new int[] { id.Value }).FirstOrDefault();
             if (condominium == null)
             {
                 return HttpNotFound();
@@ -66,7 +70,7 @@ namespace EntityFrameworkDemo01.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Condominium condominium = db.Read(new int[] { id.Value }).First();
+            Condominium condominium = db.Read(new int[] { id.Value }).FirstOrDefault();
             if (condominium == null)
             {
                 return HttpNotFound();
@@ -96,12 +100,12 @@ namespace EntityFrameworkDemo01.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Condominium condominium = db.Delete(new int[] { id.Value }).First();
+            Condominium condominium = db.Delete(new int[] { id.Value }).FirstOrDefault();
             if (condominium == null)
             {
                 return HttpNotFound();
             }
-            return View(condominium);
+            return RedirectToAction("Index");
         }
     }
 }

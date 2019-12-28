@@ -31,3 +31,9 @@ C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkD
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\obj\Debug\EntityFrameworkDemo01Tests.csproj.CopyComplete
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\obj\Debug\EntityFrameworkDemo01Tests.dll
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\obj\Debug\EntityFrameworkDemo01Tests.pdb
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\bin\Debug\EntityFrameworkDemo01Tests.dll.config
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\bin\Debug\WebGrease.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\bin\Debug\Antlr3.Runtime.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01Tests\bin\Debug\Newtonsoft.Json.xml

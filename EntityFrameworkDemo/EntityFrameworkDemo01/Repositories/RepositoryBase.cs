@@ -25,7 +25,7 @@ namespace EntityFrameworkDemo01.Repositories
 
         public virtual void Update(T t)
         {
-            Update(t);
+            Entry(t).State = EntityState.Modified;
             SaveChanges();
         }
     }

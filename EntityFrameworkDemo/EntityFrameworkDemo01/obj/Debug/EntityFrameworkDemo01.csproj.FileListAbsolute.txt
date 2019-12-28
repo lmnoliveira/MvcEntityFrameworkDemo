@@ -162,3 +162,10 @@ C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkD
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.csproj.CopyComplete
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.dll
 C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\EntityFrameworkDemo01.pdb
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Glimpse.Ado.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Glimpse.AspNet.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Glimpse.Core.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Glimpse.EF6.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Glimpse.Mvc5.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Common.dll
+C:\Users\lmnol\Source\Repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Common.pdb
