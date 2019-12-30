@@ -13,14 +13,16 @@ using EntityFrameworkDemo.DomainModels;
 using System.Data.SqlClient;
 using Common.Helpers.Reflection;
 using Common.Helpers;
+using MvcDemo.Resources;
 
 namespace MvcDemo.Controllers
 {
     public class CondominiumController : Controller
     {
-        private readonly ICondominiumRepository CondominiumRepo = new CondominiumRepository();
-        private AutoMapper<Condominium, CondominiumViewModel> MapCondominium2CondominiumMV { get; set; }
-        private AutoMapper<CondominiumViewModel, Condominium> MapCondominiumMV2Condominium { get; set; }
+        private readonly ICondominiumRepository _condominiumRepo = new CondominiumRepository();
+        private AutoMapper<Condominium, CondominiumViewModel> _mapCondominium2CondominiumMV { get; set; }
+        private AutoMapper<CondominiumViewModel, Condominium> _mapCondominiumMV2Condominium { get; set; }
+        private long? _subsidiaryId = null;
 
         public CondominiumController()
         {
@@ -30,20 +32,29 @@ namespace MvcDemo.Controllers
         public CondominiumController(ICondominiumRepository condominiumRepository)
         {
             Inititalize();
-            this.CondominiumRepo = condominiumRepository;
+            this._condominiumRepo = condominiumRepository;
         }
 
         private void Inititalize()
         {
-            MapCondominium2CondominiumMV = new AutoMapper<Condominium, CondominiumViewModel>();
-            MapCondominiumMV2Condominium = new AutoMapper<CondominiumViewModel, Condominium>();
+            _mapCondominium2CondominiumMV = new AutoMapper<Condominium, CondominiumViewModel>();
+        }
+
+        protected override void OnActionExecuting(ActionExecutingContext filterContext)
+        {
+            base.OnActionExecuting(filterContext);
+            if(_subsidiaryId is null)
+            {
+                _subsidiaryId = Convert.ToInt64(Session[SessionKeys.SubsidiaryId]);
+                _mapCondominiumMV2Condominium = new AutoMapper<CondominiumViewModel, Condominium>(new KeyValuePair<string, object>[] { new KeyValuePair<string, object>(ObjectMembers.GetMemberName((Condominium c) => c.SubsidiaryId), _subsidiaryId) }.ToList());
+            }
         }
 
         // GET: Condominiums
         public ActionResult Index()
         {
-            return View(MapCondominium2CondominiumMV.Run(
-                        CondominiumRepo.Read(
+            return View(_mapCondominium2CondominiumMV.Run(
+                        _condominiumRepo.Read(
                             0,
                             pageNumber: 0,
                             rowsPerPage: 10,
@@ -57,8 +68,8 @@ namespace MvcDemo.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Condominium condominiumDomainModel = CondominiumRepo.Read(new int[] { id.Value }).FirstOrDefault();
-            CondominiumViewModel condominiumViewModel = MapCondominium2CondominiumMV.Run(condominiumDomainModel);
+            Condominium condominiumDomainModel = _condominiumRepo.Read(new int[] { id.Value }).FirstOrDefault();
+            CondominiumViewModel condominiumViewModel = _mapCondominium2CondominiumMV.Run(condominiumDomainModel);
             if (condominiumViewModel == null)
             {
                 return HttpNotFound();
@@ -81,7 +92,7 @@ namespace MvcDemo.Controllers
         {
             if (ModelState.IsValid)
             {
-                CondominiumRepo.Create(MapCondominiumMV2Condominium.Run(condominium));
+                _condominiumRepo.Create(_mapCondominiumMV2Condominium.Run(condominium));
                 return RedirectToAction("Index");
             }
 
@@ -95,12 +106,12 @@ namespace MvcDemo.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Condominium condominiumDomainModel = CondominiumRepo.Read(new int[] { id.Value }).FirstOrDefault();
+            Condominium condominiumDomainModel = _condominiumRepo.Read(new int[] { id.Value }).FirstOrDefault();
             if (condominiumDomainModel == null)
             {
                 return HttpNotFound();
             }
-            return View(MapCondominium2CondominiumMV.Run(condominiumDomainModel));
+            return View(_mapCondominium2CondominiumMV.Run(condominiumDomainModel));
         }
 
         // POST: Condominiums/Edit/5
@@ -112,7 +123,7 @@ namespace MvcDemo.Controllers
         {
             if (ModelState.IsValid)
             {
-                CondominiumRepo.Update(MapCondominiumMV2Condominium.Run(condominium));
+                _condominiumRepo.Update(_mapCondominiumMV2Condominium.Run(condominium));
                 return RedirectToAction("Index");
             }
             return View(condominium);
@@ -125,7 +136,7 @@ namespace MvcDemo.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Condominium condominiumDomainModel = CondominiumRepo.Delete(new int[] { id.Value }).FirstOrDefault();
+            Condominium condominiumDomainModel = _condominiumRepo.Delete(new int[] { id.Value }).FirstOrDefault();
             if (condominiumDomainModel == null)
             {
                 return HttpNotFound();

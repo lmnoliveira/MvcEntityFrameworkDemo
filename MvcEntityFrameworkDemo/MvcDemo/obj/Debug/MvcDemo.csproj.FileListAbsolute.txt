@@ -91,9 +91,6 @@ C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkD
 C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\MvcDemo.csproj.CopyComplete
 C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\MvcDemo.csprojAssemblyReference.cache
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.csprojAssemblyReference.cache
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFrameworkDemo01.dll.config
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFrameworkDemo01.dll
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFrameworkDemo01.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\csc.exe
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\csc.exe.config
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\csc.rsp
@@ -183,5 +180,8 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bi
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Antlr3.Runtime.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.csproj.CopyComplete
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\EntityFrameworkDemo01.dll
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\EntityFrameworkDemo01.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.dll.config
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.pdb

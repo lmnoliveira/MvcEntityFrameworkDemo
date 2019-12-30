@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MvcDemo.Resources;
 
 namespace MvcDemo.Controllers
 {
@@ -10,6 +11,7 @@ namespace MvcDemo.Controllers
     {
         public ActionResult Index()
         {
+            Session[SessionKeys.SubsidiaryId] = (new Random()).Next();
             return View();
         }
 

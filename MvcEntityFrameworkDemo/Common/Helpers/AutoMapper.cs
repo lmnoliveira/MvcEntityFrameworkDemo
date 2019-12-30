@@ -9,7 +9,7 @@ namespace Common.Helpers
 {
     public class AutoMapper<TSource, TDestination>
     {
-        private IMapper Mapper { get; set; }
+        private IMapper _mapper { get; set; }
 
         public AutoMapper()
         {
@@ -28,17 +28,17 @@ namespace Common.Helpers
             nameValueParameters?.ForEach(nvp => mappingExpression.ForMember(nvp.Key, mo => mo.MapFrom(mf => nvp.Value)));
 
             var config = new MapperConfiguration(configExpression);
-            Mapper = config.CreateMapper();
+            _mapper = config.CreateMapper();
         }
 
         public TDestination Run(TSource source)
         {
-            return Mapper.Map<TDestination>(source);
+            return _mapper.Map<TDestination>(source);
         }
 
         public IEnumerable<TDestination> Run(IEnumerable<TSource> source)
         {
-            return Mapper.Map<IEnumerable<TDestination>>(source);
+            return _mapper.Map<IEnumerable<TDestination>>(source);
         }
     }
 }
