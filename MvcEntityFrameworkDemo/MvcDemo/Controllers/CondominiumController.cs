@@ -22,7 +22,6 @@ namespace MvcDemo.Controllers
         private readonly ICondominiumRepository _condominiumRepo = new CondominiumRepository();
         private AutoMapper<Condominium, CondominiumViewModel> _mapCondominium2CondominiumMV { get; set; }
         private AutoMapper<CondominiumViewModel, Condominium> _mapCondominiumMV2Condominium { get; set; }
-        private long? _subsidiaryId = null;
 
         public CondominiumController()
         {
@@ -38,16 +37,7 @@ namespace MvcDemo.Controllers
         private void Inititalize()
         {
             _mapCondominium2CondominiumMV = new AutoMapper<Condominium, CondominiumViewModel>();
-        }
-
-        protected override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            base.OnActionExecuting(filterContext);
-            if(_subsidiaryId is null)
-            {
-                _subsidiaryId = Convert.ToInt64(Session[SessionKeys.SubsidiaryId]);
-                _mapCondominiumMV2Condominium = new AutoMapper<CondominiumViewModel, Condominium>(new KeyValuePair<string, object>[] { new KeyValuePair<string, object>(ObjectMembers.GetMemberName((Condominium c) => c.SubsidiaryId), _subsidiaryId) }.ToList());
-            }
+            _mapCondominiumMV2Condominium = new AutoMapper<CondominiumViewModel, Condominium>();
         }
 
         // GET: Condominiums

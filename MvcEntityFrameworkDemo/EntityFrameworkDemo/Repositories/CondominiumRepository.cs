@@ -26,18 +26,20 @@ namespace EntityFrameworkDemo.Repositories
             return Condominiums.Where(c => ids.Contains(c.Id)).ToList();
         }
 
-        public IEnumerable<Condominium> Read(long subsidiaryId,
-                                             string code_name = null,
-                                             short pageNumber = 0,
-                                             short rowsPerPage = 0,
-                                             IEnumerable<KeyValuePair<string, SortOrder>> orderBy = null)
+        public IEnumerable<Condominium> Read(long subsidiaryId, string codeName = null, short pageNumber = 0, short rowsPerPage = 0, IEnumerable<KeyValuePair<string, SortOrder>> orderBy = null)
         {
-            IQueryable<Condominium> query = Condominiums;
+            IQueryable<Condominium> query = GetReadQuery(Condominiums, subsidiaryId, codeName, pageNumber, rowsPerPage, orderBy);
+            return query.ToList();
+        }
+
+        public static IQueryable<Condominium> GetReadQuery(IQueryable<Condominium> query, long subsidiaryId, string codeName, short pageNumber, short rowsPerPage, IEnumerable<KeyValuePair<string, SortOrder>> orderBy)
+        {
+            if (query == null) query = Enumerable.Empty<Condominium>().AsQueryable();
             query = query.Where(c => c.SubsidiaryId == subsidiaryId);
-            if (!string.IsNullOrWhiteSpace(code_name)) query = query.Where(c => c.Code.Contains(code_name) || c.Name.Contains(code_name));
+            if (!string.IsNullOrWhiteSpace(codeName)) query = query.Where(c => c.Code.Contains(codeName) || c.Name.Contains(codeName));
             if (orderBy != null && orderBy.Count() > 0) foreach (var o in orderBy) query = query.OrderBy(o.Key, o.Value == SortOrder.Ascending);
             query = query.Skip(pageNumber).Take(rowsPerPage);
-            return query.ToList();
+            return query;
         }
 
         public IEnumerable<Condominium> Delete(IEnumerable<int> ids)

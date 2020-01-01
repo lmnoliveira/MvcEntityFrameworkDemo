@@ -11,7 +11,6 @@ namespace MvcDemo.Controllers
     {
         public ActionResult Index()
         {
-            Session[SessionKeys.SubsidiaryId] = (new Random()).Next();
             return View();
         }
 

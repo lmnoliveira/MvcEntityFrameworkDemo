@@ -53,11 +53,11 @@
   <ItemGroup>
     <Compile Include="DomainModels\Condominium.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CondominiumRepository.cs" />
-    <Compile Include="Connections.cs" />
+    <Compile Include="Repositories\CondominiumRepository.cs" />
+    <Compile Include="Repositories\Connections.cs" />
     <Compile Include="Interfaces\ICondominiumRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
-    <Compile Include="RepositoryBase.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -69,6 +69,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
