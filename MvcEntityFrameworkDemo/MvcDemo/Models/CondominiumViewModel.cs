@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Web.Mvc;
 
 namespace MvcDemo.Models
 {
@@ -9,9 +8,15 @@ namespace MvcDemo.Models
         public int Id { get; set; }
 
         [Required]
+        public long SubsidiaryId { get; set; }
+
+        [Required]
         public string Code { get; set; }
 
         [Required]
         public string Name { get; set; }
+
+        [Required]
+        public string Address { get; set; }
     }
 }

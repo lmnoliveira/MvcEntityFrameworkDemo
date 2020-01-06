@@ -27,3 +27,11 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFram
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\bin\Debug\AutoMapper.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\bin\Debug\AutoMapper.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\bin\Debug\AutoMapper.xml
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.CreateCondominiumsTable.resources
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.csproj.GenerateResource.cache
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.CreateZonesTable.resources
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.AddCondominiumColumnToZonesTable.resources
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.CreateEntitiesTable.resources
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.CreateCompaniesTable.resources
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.CreateFrationsTable.resources
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\EntityFrameworkDemo\obj\Debug\EntityFrameworkDemo.Migrations.AddFractionColumnToZonesTable.resources

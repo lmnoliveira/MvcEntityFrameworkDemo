@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -51,12 +50,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainModels\Company.cs" />
     <Compile Include="DomainModels\Condominium.cs" />
+    <Compile Include="DomainModels\EntitiesFractions.cs" />
+    <Compile Include="DomainModels\Entity.cs" />
+    <Compile Include="DomainModels\Fraction.cs" />
+    <Compile Include="DomainModels\Zone.cs" />
+    <Compile Include="Interfaces\IZoneRepository.cs" />
+    <Compile Include="Migrations\202001062043060_CreateCondominiumsTable.cs" />
+    <Compile Include="Migrations\202001062043060_CreateCondominiumsTable.Designer.cs">
+      <DependentUpon>202001062043060_CreateCondominiumsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001062046583_CreateZonesTable.cs" />
+    <Compile Include="Migrations\202001062046583_CreateZonesTable.Designer.cs">
+      <DependentUpon>202001062046583_CreateZonesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001062052251_AddCondominiumColumnToZonesTable.cs" />
+    <Compile Include="Migrations\202001062052251_AddCondominiumColumnToZonesTable.Designer.cs">
+      <DependentUpon>202001062052251_AddCondominiumColumnToZonesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001062121154_CreateEntitiesTable.cs" />
+    <Compile Include="Migrations\202001062121154_CreateEntitiesTable.Designer.cs">
+      <DependentUpon>202001062121154_CreateEntitiesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001062122007_CreateCompaniesTable.cs" />
+    <Compile Include="Migrations\202001062122007_CreateCompaniesTable.Designer.cs">
+      <DependentUpon>202001062122007_CreateCompaniesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001062131130_CreateFrationsTable.cs" />
+    <Compile Include="Migrations\202001062131130_CreateFrationsTable.Designer.cs">
+      <DependentUpon>202001062131130_CreateFrationsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001062135149_AddFractionColumnToZonesTable.cs" />
+    <Compile Include="Migrations\202001062135149_AddFractionColumnToZonesTable.Designer.cs">
+      <DependentUpon>202001062135149_AddFractionColumnToZonesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\MigrationsDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CondominiumRepository.cs" />
-    <Compile Include="Repositories\Connections.cs" />
     <Compile Include="Interfaces\ICondominiumRepository.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Repositories\MigrationsRepository.cs" />
+    <Compile Include="Repositories\ZoneRepository.cs" />
+    <Compile Include="Repositories\CondominiumRepository.cs" />
+    <Compile Include="Repositories\Connections.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,14 +106,28 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202001062043060_CreateCondominiumsTable.resx">
+      <DependentUpon>202001062043060_CreateCondominiumsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001062046583_CreateZonesTable.resx">
+      <DependentUpon>202001062046583_CreateZonesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001062052251_AddCondominiumColumnToZonesTable.resx">
+      <DependentUpon>202001062052251_AddCondominiumColumnToZonesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001062121154_CreateEntitiesTable.resx">
+      <DependentUpon>202001062121154_CreateEntitiesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001062122007_CreateCompaniesTable.resx">
+      <DependentUpon>202001062122007_CreateCompaniesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001062131130_CreateFrationsTable.resx">
+      <DependentUpon>202001062131130_CreateFrationsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001062135149_AddFractionColumnToZonesTable.resx">
+      <DependentUpon>202001062135149_AddFractionColumnToZonesTable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
-  </Target>
-  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
 </Project>

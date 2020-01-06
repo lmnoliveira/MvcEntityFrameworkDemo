@@ -1,0 +1,11 @@
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\Common.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\Common.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\Antlr3.Runtime.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\AutoMapper.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\Antlr3.Runtime.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\AutoMapper.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Release\AutoMapper.xml
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Release\Common.csprojAssemblyReference.cache
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Release\Common.csproj.CopyComplete
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Release\Common.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Release\Common.pdb

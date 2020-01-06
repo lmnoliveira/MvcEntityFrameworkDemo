@@ -1,10 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Web.Mvc;
-using EntityFrameworkDemo.Repositories.Interfaces;
+﻿using EntityFrameworkDemo.Repositories.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MvcDemo.Controllers;
 using MvcDemo.Models;
+using System.Linq;
+using System.Web.Mvc;
 
 namespace MvcEntityFrameworkDemoTest.Controllers
 {
@@ -12,14 +11,14 @@ namespace MvcEntityFrameworkDemoTest.Controllers
     public class CondominiumControllerTest
     {
         private ICondominiumRepository _repository;
-        private CondominiumController _controller;
+        private CondominiumsController _controller;
         private CondominiumViewModel _condominium;
 
         [TestInitialize()]
         public void SetupController()
         {
             _repository = new Mocks.CondominiumMockRepository();
-            _controller = new CondominiumController(_repository);
+            _controller = new CondominiumsController(_repository);
             _condominium = new CondominiumViewModel
             {
                 Code = "Condo_123",
@@ -47,7 +46,7 @@ namespace MvcEntityFrameworkDemoTest.Controllers
             //Arrange
             _controller.Create(_condominium);
             _condominium.Id = (from c in ((Mocks.CondominiumMockRepository)_repository).Collection select c).First().Id;
-            _condominium.Name = _condominium.Name + "_update";
+            _condominium.Name += "_update";
 
             //Act
             var result = _controller.Edit(_condominium);
