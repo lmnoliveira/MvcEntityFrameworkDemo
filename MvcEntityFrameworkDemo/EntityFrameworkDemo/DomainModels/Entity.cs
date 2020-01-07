@@ -8,6 +8,6 @@ namespace EntityFrameworkDemo.DomainModels
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        //public List<EntitiesFractions> EntitiesFractions { get; set; }
+        //public List<EntitiesFractions123> EntitiesFractions { get; set; }
     }
 }

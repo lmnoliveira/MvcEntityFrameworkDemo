@@ -52,9 +52,9 @@
   <ItemGroup>
     <Compile Include="DomainModels\Company.cs" />
     <Compile Include="DomainModels\Condominium.cs" />
-    <Compile Include="DomainModels\EntitiesFractions.cs" />
     <Compile Include="DomainModels\Entity.cs" />
     <Compile Include="DomainModels\Fraction.cs" />
+    <Compile Include="DomainModels\Supplier.cs" />
     <Compile Include="DomainModels\Zone.cs" />
     <Compile Include="Interfaces\IZoneRepository.cs" />
     <Compile Include="Migrations\202001062043060_CreateCondominiumsTable.cs" />
@@ -73,19 +73,17 @@
     <Compile Include="Migrations\202001062121154_CreateEntitiesTable.Designer.cs">
       <DependentUpon>202001062121154_CreateEntitiesTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001062122007_CreateCompaniesTable.cs" />
-    <Compile Include="Migrations\202001062122007_CreateCompaniesTable.Designer.cs">
-      <DependentUpon>202001062122007_CreateCompaniesTable.cs</DependentUpon>
+    <Compile Include="Migrations\202001070030596_CreateCompaniesTable.cs" />
+    <Compile Include="Migrations\202001070030596_CreateCompaniesTable.Designer.cs">
+      <DependentUpon>202001070030596_CreateCompaniesTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202001062131130_CreateFrationsTable.cs" />
-    <Compile Include="Migrations\202001062131130_CreateFrationsTable.Designer.cs">
-      <DependentUpon>202001062131130_CreateFrationsTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202001062135149_AddFractionColumnToZonesTable.cs" />
-    <Compile Include="Migrations\202001062135149_AddFractionColumnToZonesTable.Designer.cs">
-      <DependentUpon>202001062135149_AddFractionColumnToZonesTable.cs</DependentUpon>
+    <Compile Include="Migrations\202001070035070_CreateSuppliersTable.cs" />
+    <Compile Include="Migrations\202001070035070_CreateSuppliersTable.Designer.cs">
+      <DependentUpon>202001070035070_CreateSuppliersTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\Configurations\CompanyConfiguration.cs" />
+    <Compile Include="Migrations\Configurations\SupplierConfiguration.cs" />
     <Compile Include="Migrations\MigrationsDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interfaces\ICondominiumRepository.cs" />
@@ -119,14 +117,11 @@
     <EmbeddedResource Include="Migrations\202001062121154_CreateEntitiesTable.resx">
       <DependentUpon>202001062121154_CreateEntitiesTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001062122007_CreateCompaniesTable.resx">
-      <DependentUpon>202001062122007_CreateCompaniesTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202001070030596_CreateCompaniesTable.resx">
+      <DependentUpon>202001070030596_CreateCompaniesTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001062131130_CreateFrationsTable.resx">
-      <DependentUpon>202001062131130_CreateFrationsTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202001062135149_AddFractionColumnToZonesTable.resx">
-      <DependentUpon>202001062135149_AddFractionColumnToZonesTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202001070035070_CreateSuppliersTable.resx">
+      <DependentUpon>202001070035070_CreateSuppliersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

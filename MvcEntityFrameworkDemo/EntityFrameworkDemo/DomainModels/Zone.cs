@@ -14,6 +14,6 @@ namespace EntityFrameworkDemo.DomainModels
         public string Name { get; set; }
 
         public Condominium Condominium { get; set; }
-        public List<Fraction> Fractions { get; set; }
+        //public List<Fraction> Fractions { get; set; }
     }
 }

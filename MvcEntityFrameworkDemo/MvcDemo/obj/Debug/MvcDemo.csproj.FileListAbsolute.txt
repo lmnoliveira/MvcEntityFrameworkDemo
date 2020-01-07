@@ -90,7 +90,9 @@ C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkD
 C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\MvcDemo.csproj.CopyComplete
 C:\Users\lmnol\source\repos\EntityFramework\EntityFrameworkDemo\EntityFrameworkDemo01\obj\Debug\MvcDemo.csprojAssemblyReference.cache
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.csprojAssemblyReference.cache
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.dll.config
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\csc.exe
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\csc.exe.config
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\csc.rsp
@@ -141,7 +143,6 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bi
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\VBCSCompiler.exe
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Antlr3.Runtime.dll
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\AutoMapper.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Common.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFramework.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFramework.SqlServer.dll
@@ -162,11 +163,10 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bi
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\System.Web.WebPages.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\System.Web.WebPages.Razor.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\WebGrease.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\AutoMapper.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Common.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFrameworkDemo.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFrameworkDemo.dll.config
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\AutoMapper.pdb
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\AutoMapper.xml
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFramework.xml
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\EntityFramework.SqlServer.xml
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Newtonsoft.Json.xml
@@ -179,9 +179,9 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bi
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\System.Web.WebPages.Razor.xml
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Antlr3.Runtime.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\AutoMapper.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\AutoMapper.xml
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.csprojAssemblyReference.cache
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.csproj.CopyComplete
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.dll.config
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.dll
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\MvcDemo.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.pdb
