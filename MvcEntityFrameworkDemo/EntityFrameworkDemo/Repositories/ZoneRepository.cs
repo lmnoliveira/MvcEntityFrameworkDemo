@@ -1,4 +1,4 @@
-﻿using EntityFrameworkDemo.DomainModels;
+﻿using DomainModelsDemo;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -11,24 +11,24 @@ namespace EntityFrameworkDemo.Repositories
 {
     public class ZoneRepository : RepositoryBase<Zone>, IZoneRepository
     {
-        public DbSet<Zone> Zones { get; set; }
+        //public DbSet<Zone> Zones { get; set; }
 
-        public ZoneRepository() : base()    
-        {
-        }
+        //public ZoneRepository() : base()    
+        //{
+        //}
 
-        public ZoneRepository(string nameOrConnectionString) //: base(nameOrConnectionString)
-        {
-        }
+        //public ZoneRepository(string nameOrConnectionString) : base(nameOrConnectionString)
+        //{
+        //}
 
         public IEnumerable<Zone> Read(IEnumerable<int> ids)
         {
-            return Zones.Where(c => ids.Contains(c.Id)).ToList();
+            return Set<Zone>().Where(c => ids.Contains(c.Id)).ToList();
         }
 
         public IEnumerable<Zone> Read(int? condominiumId, short pageNumber = 0, short rowsPerPage = 0, IEnumerable<KeyValuePair<string, SortOrder>> orderBy = null)
         {
-            IQueryable<Zone> query = GetReadQuery(Zones, condominiumId, pageNumber, rowsPerPage, orderBy);
+            IQueryable<Zone> query = GetReadQuery(Set<Zone>(), condominiumId, pageNumber, rowsPerPage, orderBy);
             return query.ToList();
         }
 
@@ -43,7 +43,7 @@ namespace EntityFrameworkDemo.Repositories
 
         public IEnumerable<Zone> Delete(IEnumerable<int> ids)
         {
-            var deletedZones = Zones.RemoveRange(Read(ids));
+            var deletedZones = Set<Zone>().RemoveRange(Read(ids));
             SaveChanges();
             return deletedZones;
         }

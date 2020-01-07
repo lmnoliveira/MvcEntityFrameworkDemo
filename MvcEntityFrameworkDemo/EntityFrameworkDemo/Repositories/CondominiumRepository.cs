@@ -1,4 +1,4 @@
-﻿using EntityFrameworkDemo.DomainModels;
+﻿using DomainModelsDemo;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -11,24 +11,16 @@ namespace EntityFrameworkDemo.Repositories
 {
     public class CondominiumRepository : RepositoryBase<Condominium>, ICondominiumRepository
     {
-        public DbSet<Condominium> Condominiums { get; set; }
-
-        public CondominiumRepository() : base()
-        {
-        }
-
-        public CondominiumRepository(string nameOrConnectionString) : base(nameOrConnectionString)
-        {
-        }
+        //public DbSet<Condominium> Condominiums { get; set; }
 
         public IEnumerable<Condominium> Read(IEnumerable<int> ids)
         {
-            return Condominiums.Where(c => ids.Contains(c.Id)).ToList();
+            return Set<Condominium>().Where(c => ids.Contains(c.Id)).ToList();
         }
 
         public IEnumerable<Condominium> Read(long subsidiaryId, string codeName = null, short pageNumber = 0, short rowsPerPage = 0, IEnumerable<KeyValuePair<string, SortOrder>> orderBy = null)
         {
-            IQueryable<Condominium> query = GetReadQuery(Condominiums, subsidiaryId, codeName, pageNumber, rowsPerPage, orderBy);
+            IQueryable<Condominium> query = GetReadQuery(Set<Condominium>(), subsidiaryId, codeName, pageNumber, rowsPerPage, orderBy);
             return query.ToList();
         }
 
@@ -44,7 +36,7 @@ namespace EntityFrameworkDemo.Repositories
 
         public IEnumerable<Condominium> Delete(IEnumerable<int> ids)
         {
-            var deletedCondominiums = Condominiums.RemoveRange(Read(ids));
+            var deletedCondominiums = Set<Condominium>().RemoveRange(Read(ids));
             SaveChanges();
             return deletedCondominiums;
         }

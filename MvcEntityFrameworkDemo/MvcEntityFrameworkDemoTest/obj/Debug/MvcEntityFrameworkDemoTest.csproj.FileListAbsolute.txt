@@ -35,3 +35,5 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcEntityF
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcEntityFrameworkDemoTest\obj\Debug\MvcEntityFrameworkDemoTest.csproj.CopyComplete
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcEntityFrameworkDemoTest\obj\Debug\MvcEntityFrameworkDemoTest.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcEntityFrameworkDemoTest\obj\Debug\MvcEntityFrameworkDemoTest.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcEntityFrameworkDemoTest\bin\Debug\DomainModelsDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcEntityFrameworkDemoTest\bin\Debug\DomainModelsDemo.pdb

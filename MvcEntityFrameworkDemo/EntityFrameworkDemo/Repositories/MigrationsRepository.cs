@@ -1,12 +1,19 @@
-﻿using EntityFrameworkDemo.DomainModels;
+﻿using DomainModelsDemo;
+using EntityFrameworkDemo.Configurations;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 
 namespace EntityFrameworkDemo.Repositories
 {
-    public sealed class MigrationsRepository : RepositoryBase<MigrationsRepository>
+    sealed class MigrationsRepository : RepositoryBase<MigrationsRepository>
     {
-        public DbSet<Condominium> Condominiums { get; set; }
-        public DbSet<Zone> Zones { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new CondominiumConfiguration());
+            modelBuilder.Configurations.Add(new ZoneConfiguration());
+            modelBuilder.Configurations.Add(new EntityConfiguration());
+            modelBuilder.Configurations.Add(new CompanyConfiguration());
+            modelBuilder.Configurations.Add(new SupplierConfiguration());
+        }
     }
 }

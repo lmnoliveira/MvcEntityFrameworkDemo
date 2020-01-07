@@ -1,4 +1,4 @@
-﻿using EntityFrameworkDemo.DomainModels;
+﻿using DomainModelsDemo;
 using EntityFrameworkDemo.Repositories;
 using EntityFrameworkDemo.Repositories.Interfaces;
 using System.Collections.Generic;

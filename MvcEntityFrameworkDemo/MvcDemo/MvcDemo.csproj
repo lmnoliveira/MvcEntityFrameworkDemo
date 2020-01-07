@@ -145,7 +145,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CondominiumsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ZonesController.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -294,11 +293,6 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
-    <Content Include="Views\Zones\Create.cshtml" />
-    <Content Include="Views\Zones\Delete.cshtml" />
-    <Content Include="Views\Zones\Details.cshtml" />
-    <Content Include="Views\Zones\Edit.cshtml" />
-    <Content Include="Views\Zones\Index.cshtml" />
     <Content Include="Views\Condominiums\Create.cshtml" />
     <Content Include="Views\Condominiums\Delete.cshtml" />
     <Content Include="Views\Condominiums\Details.cshtml" />
@@ -323,6 +317,10 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{d2f37526-1b9b-44de-b255-436cf7479eee}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainModelsDemo\DomainModelsDemo.csproj">
+      <Project>{ee9497d4-5a77-4349-8829-6eee65b30fdf}</Project>
+      <Name>DomainModelsDemo</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntityFrameworkDemo\EntityFrameworkDemo.csproj">
       <Project>{6f3d901b-1360-47b3-a264-52fd7bdc305c}</Project>

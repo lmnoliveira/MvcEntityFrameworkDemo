@@ -67,6 +67,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DomainModelsDemo\DomainModelsDemo.csproj">
+      <Project>{ee9497d4-5a77-4349-8829-6eee65b30fdf}</Project>
+      <Name>DomainModelsDemo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntityFrameworkDemo\EntityFrameworkDemo.csproj">
       <Project>{6f3d901b-1360-47b3-a264-52fd7bdc305c}</Project>
       <Name>EntityFrameworkDemo</Name>

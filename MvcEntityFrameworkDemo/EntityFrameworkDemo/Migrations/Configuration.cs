@@ -5,14 +5,14 @@ namespace EntityFrameworkDemo.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EntityFrameworkDemo.Migrations.MigrationsDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<EntityFrameworkDemo.Repositories.MigrationsRepository>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(EntityFrameworkDemo.Migrations.MigrationsDbContext context)
+        protected override void Seed(EntityFrameworkDemo.Repositories.MigrationsRepository context)
         {
             //  This method will be called after migrating to the latest version.
 

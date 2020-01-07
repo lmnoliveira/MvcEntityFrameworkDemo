@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcEntityFrameworkDemoTest", "MvcEntityFrameworkDemoTest\MvcEntityFrameworkDemoTest.csproj", "{C6DE220D-64E2-4818-B84F-1C3CE5A2DEC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModelsDemo", "DomainModelsDemo\DomainModelsDemo.csproj", "{EE9497D4-5A77-4349-8829-6EEE65B30FDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C6DE220D-64E2-4818-B84F-1C3CE5A2DEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6DE220D-64E2-4818-B84F-1C3CE5A2DEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6DE220D-64E2-4818-B84F-1C3CE5A2DEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9497D4-5A77-4349-8829-6EEE65B30FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9497D4-5A77-4349-8829-6EEE65B30FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9497D4-5A77-4349-8829-6EEE65B30FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9497D4-5A77-4349-8829-6EEE65B30FDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

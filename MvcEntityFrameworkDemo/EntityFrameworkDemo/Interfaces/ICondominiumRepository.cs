@@ -1,4 +1,4 @@
-﻿using EntityFrameworkDemo.DomainModels;
+﻿using DomainModelsDemo;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 

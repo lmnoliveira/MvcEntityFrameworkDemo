@@ -1,6 +1,6 @@
 ﻿using Common.Helpers;
 using Common.Helpers.Reflection;
-using EntityFrameworkDemo.DomainModels;
+using DomainModelsDemo;
 using EntityFrameworkDemo.Repositories;
 using EntityFrameworkDemo.Repositories.Interfaces;
 using MvcDemo.Models;

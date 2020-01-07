@@ -185,3 +185,5 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\ob
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.csproj.CopyComplete
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\DomainModelsDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\DomainModelsDemo.pdb

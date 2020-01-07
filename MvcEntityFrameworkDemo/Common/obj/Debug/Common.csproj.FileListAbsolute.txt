@@ -9,7 +9,6 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Debug\Antlr3.Runtime.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Debug\AutoMapper.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\bin\Debug\AutoMapper.xml
-C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Debug\Common.csprojAssemblyReference.cache
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Debug\Common.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\Common\obj\Debug\Common.pdb

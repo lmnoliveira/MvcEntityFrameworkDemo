@@ -1,0 +1,4 @@
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\DomainModelsDemo\bin\Debug\DomainModelsDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\DomainModelsDemo\bin\Debug\DomainModelsDemo.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\DomainModelsDemo\obj\Debug\DomainModelsDemo.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\DomainModelsDemo\obj\Debug\DomainModelsDemo.pdb
