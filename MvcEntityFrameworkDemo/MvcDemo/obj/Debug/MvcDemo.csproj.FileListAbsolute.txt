@@ -187,3 +187,8 @@ C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\ob
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\obj\Debug\MvcDemo.pdb
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\DomainModelsDemo.dll
 C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\DomainModelsDemo.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Autofac.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Autofac.Integration.Mvc.dll
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Autofac.pdb
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Autofac.xml
+C:\Users\lmnol\source\repos\MvcEntityFramework\MvcEntityFrameworkDemo\MvcDemo\bin\Autofac.Integration.Mvc.xml

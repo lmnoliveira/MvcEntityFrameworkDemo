@@ -8,7 +8,7 @@ namespace EntityFrameworkDemo.Repositories
 {
     public abstract class RepositoryBase<T> : DbContext, IRepository<T> where T : class
     {
-        public RepositoryBase() : base("name=" +  Connections.EntityFrameworkDemoConnName)
+        public RepositoryBase()// : base("name=" +  Connections.EntityFrameworkDemoConnName)
         {
         }
 

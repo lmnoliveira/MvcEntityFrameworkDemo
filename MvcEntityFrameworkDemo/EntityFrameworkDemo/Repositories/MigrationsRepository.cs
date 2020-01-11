@@ -1,7 +1,5 @@
-﻿using DomainModelsDemo;
-using EntityFrameworkDemo.Configurations;
+﻿using EntityFrameworkDemo.Configurations;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 
 namespace EntityFrameworkDemo.Repositories
 {
